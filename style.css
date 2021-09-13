@@ -1,0 +1,173 @@
+*{
+    background-image: url(./back.jpg);
+}
+
+h1 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 250%;
+    color: antiquewhite;
+    margin: 0;
+}
+
+.scores{
+    display: flex;
+  justify-content: center;
+  text-align: center;   
+}
+
+.playerX, .playerO{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;   
+    font-family: 'Patrick Hand', cursive;
+    font-size: 15px;
+    color: antiquewhite;
+    font-weight: bolder;
+}
+
+.scores p{
+    margin: .5em;
+}
+
+#board {
+    padding: 1 rem;
+    margin: 1 rem;
+    text-align: center;
+    position: relative;
+}
+
+.mboard{
+    margin-top: 1em;
+}
+
+.square {
+    float: left;
+    clear: right;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 300%;
+    font-weight: bolder;
+    color: antiquewhite;
+}
+
+.square:hover {
+    cursor: pointer;
+}
+
+.row {
+    margin: 0 auto;
+    width: 302px;
+}
+
+#squareC {
+    border-top-right-radius: 0.25rem;
+}
+
+#squareI {
+    border-bottom-right-radius: 0.25rem;
+}
+
+#squareG {
+    border-bottom-left-radius: 0.25rem;
+}
+
+#squareA {
+    border-top-left-radius: 0.25rem;
+}
+
+#squareA, #squareB, #squareC {
+    border-bottom-color: antiquewhite;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#squareG, #squareH, #squareI {
+    border-top-color: antiquewhite;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+#squareA, #squareD, #squareG {
+    border-right-color: antiquewhite;
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+
+#squareC, #squareF, #squareI {
+    border-left-color: antiquewhite;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+.buttons{
+    bottom:0; 
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-30%);
+    padding: .5em;
+    justify-content: center;
+    align-items: center;   
+}
+
+.buttons button{
+
+    font-size: 3rem;
+    color: white;
+    border: 1px solid white;
+    padding: .5em .5em;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.buttons a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+button:hover{
+    background: black;
+}
+
+.gameEnd {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    flex-direction: column;
+}
+
+.gameEnd button {
+    font-size: 3rem;
+    color: white;
+    border: 1px solid white;
+    padding: .25em .5em;
+    cursor: pointer;
+  }
+  
+  .gameEnd button:hover {
+    background-color: black;
+  }
+
+.gameEnd.show {
+    display: flex;
+  }

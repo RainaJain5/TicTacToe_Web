@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main2.js" defer></script>
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="board">
+            <h1>Tic Tac Toe</h1>
+        <div class="scores">
+            <div class="playerX">
+                <p id="X">Player X</p>
+                <p id="playerX_score">0</p>
+            </div>
+            <div class="playerO">
+                <p id="O">Player O</p>
+                <p id="playerO_score">0</p>
+            </div>
+        </div>
+        <div class="mboard">
+        <div class="row" id="row2">
+            <div class="square" id="squareA" data-cell></div>
+            <div class="square" id="squareB" data-cell></div>
+            <div class="square" id="squareC" data-cell></div>
+        </div>
+        <div class="row" id="row3">
+            <div class="square" id="squareD" data-cell></div>
+            <div class="square" id="squareE" data-cell></div>
+            <div class="square" id="squareF" data-cell></div>
+        </div>
+        <div class="row" id="row4">
+            <div class="square" id="squareG" data-cell></div>
+            <div class="square" id="squareH" data-cell></div>
+            <div class="square" id="squareI" data-cell></div>
+        </div>
+    </div>
+    </div>
+    <div class="buttons">
+        <button> <a href="index.html">Main Menu </a> </button>
+        <button id="resetButton"> Reset</a> </button>
+    </div>
+    <div class="gameEnd" id="GameEnd">
+        <div EndText></div>
+        <button id="restartButton">Restart</button>
+    </div>
+    
+</body>
+</html>
